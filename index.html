@@ -118,6 +118,30 @@ h2 {
     height: 55px;
     margin-left: 10px;
 }
+
+.dept-banner {
+    margin-top: 22px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.dept-banner img {
+    width: 100%;
+    height: 26px;
+	object-fit: cover;
+    display: block;
+    animation: slideIn 1.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 </style>
 </head>
 
@@ -148,6 +172,10 @@ h2 {
 
 <div class="map-overlay" id="mapOverlay" onclick="closeMap()">
     <img src="map.png" class="map-full">
+</div>
+
+<div class="dept-banner">
+    <img src="dept.png" alt="Department">
 </div>
 
 </div>
